@@ -2,289 +2,218 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="backup.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="intro.css">
-    <link rel="stylesheet" href="project.css">
-    <link rel="icon" type="image/png"  href="images/LC.png">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <title>Code. Learn. Create.</title>
+    <title>Landro Capul - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #12181f; /* Base background for the page */
+        }
+        /* Custom font classes to apply imported fonts */
+        .montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .font-anton {
+            font-family: 'Anton', sans-serif;
+        }
+        /* Hide scrollbar for the carousel, but allow scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
 </head>
+<body class="text-white">
 
-<body>
-    <header class="nav-header">
-        <nav class="navbar" id="navbar">
-            <div class="logo">
-                <a href="#"><img src="images/LandroLogo2.png" class="logo1" /></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger" onclick="toggleMenu()">☰</div>
-        </nav>
-        
-    
-    </header>
-    <aside id="sidebar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </aside>
-
-    <section id="home" class="intro">
-            <div class="stars"></div>
-                <div class="shooting-star"></div>
-                <div class="shooting-star"></div>
-                <div class="shooting-star"></div>
-                <div class="shooting-star"></div>
-                <div class="shooting-star"></div>
-        
-            <div class="intro-text">            
-                <h1 class="hi">HI, I AM 
-                    
-                <span class="name"  >LANDRO</span></h1>
-            
-                <h3 class="web"> *WEB DEVELOPER | MOBILE DEVELOPERr</h3>
-                <button class="work"> VIEW DETAILS</button>
-            
-            </div>
-        
-                <picture>
-                <source media="(max-width: 768px),(max-width: 1024px),(max-width: 1366px)" srcset="images/LandroCapul2.png">
-                
-                <img src="images/LandroCapul.png" alt="Landro Capul" class="propic">
-                </picture>
-            
-    </section>
-    <section id="about" class="about-section">
-        
-        
-        
-        <div class="quote"> 
-            <div class="about-text">EVERY TASK,</div>
-            <div class="about-text2">EVERY ASK,</div>
-            <div class="about-text3">UNVEILS THE MASK</div>
-        </div>
-        <div class="aboutme">  
-                <div class="colorpic">
-                    
-                    <a href=""><img src="images/meabout.png"  class="colorme"/></a>
-                </div> 
-                <div class="job">
-                    <div class="job1">
-                        <a href=""><img src="images/makinglogo.png"  class="makelogo"/></a>
-                    
-                    </div> 
-                    <div class="job2">
-                    
-                        <a href=""><img src="images/jersey.png"  class="jersey"/></a>
-                    </div> 
-                </div> 
-                <div class="aboutmetext">
-                    <h1 >
-                        <br><br>
-                        ABOUT ME 
-                    </h1>
-                    <br>
-
-<p>
-Nice that you have found me. I am a student of Information 
-Technology, focusing on web and mobile development with 
-knowledge in PHP, JavaScript, Java, C++, and Android development.
-<br><br>
-I began as the editor of our school’s ICT Club and later 
-joined our family sublimation business as a layout artist, 
-designing logos, jerseys, and t-shirts. These roles helped 
-me connect creativity with technology.
-<br><br>
-I also have experience in video editing and skills in 
-Photoshop, CorelDRAW, and Illustrator, which I use for 
-logo and apparel design. Alongside my studies, I work on 
-freelance projects to sharpen my craft and gain real-world 
-experience.
-<br><br>
-When I’m not coding or designing, I explore new tools, build
- personal projects, and spend time with family and friends.
-                      
-</p>
+    <!-- Hero Section -->
+    <div class="bg-[#12181f] min-h-screen flex flex-col">
+        <div class="container mx-auto px-4">
+            <header class="flex justify-between items-center py-6">
+                <div class="text-2xl font-bold montserrat">
+                    <div class="relative">
+                        <span class="font-black">LANDRO</span><span class="font-bold">CAPUL</span>
+                        <div class="w-full h-1 bg-white absolute -bottom-1 right-0" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);"></div>
+                    </div>
+                    <p class="text-xs font-light tracking-widest">WEB DEVELOPER</p>
                 </div>
-                
-        </div>
-        
-
-        <div class="logos">
-            
-            
-
-            <h2 class="textproject">MY EXPERTISE </h2>
-<div class="logo_items">
-<img src="logos/android.png">
-<img src="logos/androidstudio.png">
-<img src="logos/c++.png">
-<img src="logos/eclipse.png">
-<img src="logos/java.png">
-<img src="logos/javascript.png">
-<img src="logos/mysql.png">
-<img src="logos/php.png">
-<img src="logos/vs.png">
-<img src="logos/android.png">
-<img src="logos/androidstudio.png">
-<img src="logos/c++.png">
-<img src="logos/eclipse.png">
-<img src="logos/java.png">
-<img src="logos/javascript.png">
-<img src="logos/mysql.png">
-<img src="logos/php.png">
-<img src="logos/vs.png">
-
-</div>
-  <div class="logo_items">
-<img src="logos/android.png">
-<img src="logos/androidstudio.png">
-<img src="logos/c++.png">
-<img src="logos/eclipse.png">
-<img src="logos/java.png">
-<img src="logos/javascript.png">
-<img src="logos/mysql.png">
-<img src="logos/php.png">
-<img src="logos/vs.png">
-<img src="logos/android.png">
-<img src="logos/androidstudio.png">
-<img src="logos/c++.png">
-<img src="logos/eclipse.png">
-<img src="logos/java.png">
-<img src="logos/javascript.png">
-<img src="logos/mysql.png">
-<img src="logos/php.png">
-<img src="logos/vs.png">
-</div>
-</div>
-
-
-    </section>
-
-    <section id="projects" class="project-section" >
-            <div class="textproject">
-                <h1>SEE MY <span style="color: #cb2121">WORKS </span></h1>
-                <h6>I've built projects ranging from 
-                    simple websites to complex web  
-                    apps. Here are some favorites.</h6>
-            </div>
-            <div class="projectcards">
-                <div class="card">
-                    <img src="images/JLJ.png" alt="Project Image">
-                    <div class="card-content">
-                    <h3>JLJ Delivery Services</h3>
-                    <p>
-                        With the release of the OpenAI GPT Store, I decided to build a SaaS
-                        which allows users to collect email addresses from their GPT users.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">TailwindCSS</span>
-                    </div>
-                    <a href="#" class="button">Website</a>
-                    </div>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-400">About</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Projects</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="flex-grow flex flex-col justify-center text-center md:text-left">
+                <div class="text-6xl md:text-8xl font-bold montserrat">
+                    <h1>HI, I AM <span class="text-red-600" style="text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;">LANDRO</span></h1>
                 </div>
-                <div class="card">
-                    <img src="images/ecotrac.png" alt="Project Image">
-                    <div class="card-content">
-                    <h3>EcoTrac App</h3>
-                    <p>
-                        With the release of the OpenAI GPT Store, I decided to build a SaaS
-                        which allows users to collect email addresses from their GPT users.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">TailwindCSS</span>
-                    </div>
-                    <a href="#" class="button">Website</a>
-                    </div>
+                <div class="mt-4">
+                    <p class="bg-red-600 inline-block text-white text-lg md:text-xl px-4 py-2">*WEB DEVELOPER | MOBILE DEVELOPERr</p>
                 </div>
-                <div class="card">
-                    <img src="images/webport.png" alt="Project Image">
-                    <div class="card-content">
-                    <h3>Website Porfolio</h3>
-                    <p>
-                        With the release of the OpenAI GPT Store, I decided to build a SaaS
-                        which allows users to collect email addresses from their GPT users.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">TailwindCSS</span>
-                    </div>
-                    <a href="#" class="button">Website</a>
-                    </div>
+                <div class="mt-8">
+                    <a href="#" class="border border-white px-8 py-3 text-white hover:bg-white hover:text-black transition-colors duration-300">VIEW DETAILS</a>
                 </div>
-            </div>
-    </section>
-
-    <section  id="contact"class="contact-section">
-        <div class="faq">
-        <h1>Popular Questions</h1>
-        <ul>
-            <li>What technologies do you use for web development?</li>
-            <li>Can you build responsive and mobile-friendly websites?</li>
-            <li>Do you work with both front-end and back-end development?</li>
-            <li>What kind of projects have you completed as a student?</li>
-            <li>Can you integrate a database into a website?</li>
-            <li>How can I contact you for collaboration or projects?</li>
-
-        </ul>
-        </div>
-
-        <div class="contact-form">
-        <h1>Contact Us</h1>
-        <p class="subtitle">Do you have some concern? Just write me a message</p>
-
-        <form>
-            <input type="text" placeholder="Enter your name">
-            <input type="email" placeholder="Enter your email address">
-            <input type="text" placeholder="Enter your phone (Optional)">
-            <textarea placeholder="Type your message....."></textarea>
-            <button type="submit">Submit Message</button>
-        </form>
-        </div>
-        
-    </section>
-
-
-    <footer class="footer">
-        
-    <div class="contact-info">
-        <div class="info-box">
-        <h3>FB PAGE</h3>
-        <p>www.facebook.com/LandroCapul</p>
-        </div>
-        <div class="info-box">
-        <h3>PHONE (LANDLINE)</h3>
-        <p>+0927 3425 835 <br> +0923 3435 574</p>
-        </div>
-        <div class="info-box">
-        <h3>MY LOCATION</h3>
-        <p>Ecoland Drive, Davao City, Philippines</p>
+            </main>
         </div>
     </div>
-    </footer>
 
-<script src="script.js"></script>
+    <!-- Slogan Section -->
+    <section class="bg-red-600 w-full p-12 md:p-20">
+        <div class="container mx-auto">
+            <h1 class="font-anton text-white text-7xl md:text-9xl tracking-wide">EVERY TASK,</h1>
+            <h2 class="font-anton text-white text-7xl md:text-9xl tracking-wide mt-2">EVERY ASK,</h2>
+            <p class="font-anton text-black text-4xl md:text-5xl tracking-wider mt-8">UNVEILS THE MASK</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-red-600 w-full text-white p-8 md:p-16 lg:py-24">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-2 gap-6 h-[450px] md:h-[500px]">
+                    <div class="bg-zinc-900 rounded-3xl row-span-2"></div>
+                    <div class="bg-zinc-900 rounded-3xl"></div>
+                    <div class="bg-zinc-900 rounded-3xl"></div>
+                </div>
+                <div class="space-y-6 text-base">
+                    <h2 class="text-4xl lg:text-5xl font-bold montserrat mb-8">ABOUT ME</h2>
+                    <p>Nice that you have found me. I am a student of Information Technology, focusing on web and mobile development with knowledge in PHP, JavaScript, Java, C++, and Android development.</p>
+                    <p>I began as the editor of our school’s ICT Club and later joined our family sublimation business as a layout artist, designing logos, jerseys, and t-shirts. These roles helped me connect creativity with technology.</p>
+                    <p>I also have experience in video editing and skills in Photoshop, CorelDRAW, and Illustrator, which I use for logo and apparel design. Alongside my studies, I work on freelance projects to sharpen my craft and gain real-world experience.</p>
+                    <p>When I’m not coding or designing, I explore new tools, build personal projects, and spend time with family and friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Expertise Section -->
+    <section id="expertise" class="bg-red-600 py-16 md:py-24">
+        <div class="bg-white py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-black text-4xl md:text-6xl font-black montserrat tracking-wider">MY EXPERTISE</h2>
+                <div class="mt-12">
+                    <div class="flex overflow-x-auto space-x-8 pb-4 no-scrollbar">
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Works Section -->
+    <section id="works" class="bg-zinc-900 py-24">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="font-anton text-5xl md:text-7xl tracking-wide">SEE MY <span class="text-red-600">WORKS</span></h2>
+            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">I've built projects ranging from simple websites to complex web apps. Here are some favorites.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+                <!-- Project Card 1 -->
+                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
+                    <div class="w-full bg-black aspect-video rounded-lg"></div>
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">JLJ Delivery Services</h3>
+                        <p class="text-gray-600 mt-2">With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Next.js</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">TypeScript</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">PostgreSQL</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">TailwindCSS</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Website</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 (Example) -->
+                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
+                    <div class="w-full bg-black aspect-video rounded-lg"></div>
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">Another Cool Project</h3>
+                        <p class="text-gray-600 mt-2">This is a description for another one of my favorite projects, showcasing different skills and technologies.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">React</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Firebase</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Node.js</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact and FAQ Section -->
+    <section id="contact" class="bg-red-600 py-16 md:py-24 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- FAQ Column -->
+                <div class="bg-zinc-900 p-8 rounded-2xl">
+                    <h2 class="text-3xl font-bold mb-6">Popular Questions</h2>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="border-b border-gray-700 pb-4">What technologies do you use for web development?</li>
+                        <li class="border-b border-gray-700 pb-4">Can you build responsive and mobile-friendly websites?</li>
+                        <li class="border-b border-gray-700 pb-4">Do you work with both front-end and back-end development?</li>
+                        <li class="border-b border-gray-700 pb-4">What kind of projects have you completed as a student?</li>
+                        <li class="border-b border-gray-700 pb-4">Can you integrate a database into a website?</li>
+                        <li class="pb-4">How can I contact you for collaboration or projects?</li>
+                    </ul>
+                </div>
+                <!-- Contact Form Column -->
+                <div class="bg-white text-black p-8 rounded-2xl">
+                    <h2 class="text-3xl font-bold">Contact Us</h2>
+                    <p class="text-gray-600 mb-6">Do you have some concern? Just write me a message</p>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div><input type="text" placeholder="Enter your name" class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500"></div>
+                        <div><input type="email" placeholder="Enter your email address" class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500"></div>
+                        <div><input type="tel" placeholder="Enter your phone (Optional)" class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500"></div>
+                        <div><textarea placeholder="Type your message..." rows="5" class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500"></textarea></div>
+                        <div><button type="submit" class="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-zinc-800 transition-colors">SUBMIT MESSAGE</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 py-10 px-4 text-center md:text-left">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-400">
+            <div>
+                <h3 class="font-bold text-white mb-2">FB PAGE</h3>
+                <p>www.facebook.com/LandroCapul</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-white mb-2">PHONE (LANDLINE)</h3>
+                <p>+0927 3425 835</p>
+                <p>+0923 3435 374</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-white mb-2">MY LOCATION</h3>
+                <p>Ecoland Drive, Davao City, Philippines</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
-
-
-    
