@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #12181f;
+    /* Base background for the page */
+}
+
+/* Custom font classes to apply imported fonts */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-anton {
+    font-family: 'Anton', sans-serif;
+}
+
+/* Hide scrollbar for the carousel, but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
