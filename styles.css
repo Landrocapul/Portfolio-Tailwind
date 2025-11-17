@@ -116,21 +116,13 @@ body {
 }
 
 .carousel {
-    animation: none;
+    animation: slide 20s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+    width: 200%;
 }
 
 /* Hide duplicate logos on small screens */
 .duplicate {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .carousel {
-        animation: slide 20s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
-    }
-    .duplicate {
-        display: block;
-    }
+    display: block;
 }
 
 /* Slogan text reveal animation */
