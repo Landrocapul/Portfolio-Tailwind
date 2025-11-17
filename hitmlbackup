@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landro Capul - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700;900&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-white">
+
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-transparent w-full flex justify-between items-center py-6 container mx-auto px-4">
+        <img src="images/LandroLogo2.png" alt="Landro Capul Logo" class="h-12 w-auto">
+        <nav>
+            <ul class="flex space-x-8">
+                <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400">About</a></li>
+                <li><a href="#" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[#12181f] min-h-screen flex sm:justify-center sm:items-center">
+        <div class="container text-center absolute z-20 mx-auto
+        pt-24
+        sm:pt-96 
+        md:pt-96    
+        lg:pl-20  lg:pt-96 lg:text-left
+        xl:pl-16  xl:pt-80
+        2xl:pl-0 2xl:pt-80">
+
+            <div class="text-6xl md:text-7xl 2xl:text-8xl font-bold montserrat z-20">
+                <h1 class="z-20">HI, I AM <span class="text-red-600 z-20 outline-landro">LANDRO</span>
+                </h1>
+            </div>
+            <div class="mt-4">
+                <p class="bg-red-600 inline-block text-white text-lg md:text-3xl 2xl:text-4xl px-4 py-2">WEB DEVELOPER |
+                    MOBILE DEVELOPER</p>
+            </div>
+            <div class="mt-8">
+                <a href="#"
+                    class="border border-white px-10 py-4 text-md md:text-xl text-white hover:bg-white hover:text-black transition-colors duration-300">VIEW
+                    DETAILS</a>
+            </div>
+
+        </div>
+        <div class="">
+            <!-- Mobile hero image -->
+            <img src="images/LandroCapul2.png" alt="Landro Capul"
+                class="md:hidden w-auto object-contain absolute right-0 bottom-0 z-10
+                sm:h-screen sm:pt-24 md:pt-0 pt-20">
+            <!-- Desktop/Tablet hero image -->
+            <img src="images/LandroCapul.png" alt="Landro Capul"
+                class="hidden md:block md:h-screen w-auto object-contain absolute right-0 bottom-0 z-10
+                lg:pr-0 2xl:pr-20">
+        </div>
+
+    </section>
+
+    <!-- Slogan Section -->
+    <section class="bg-red-600 w-full min-h-screen md:px-24 py-16 md:p-10 flex items-center justify-center">
+        <div class="container mx-auto my-16 md:my-72 flex flex-col gap-32 md:gap-36 md:text-left text-center">
+            <h1 class="font-extrabold montserrat text-white text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide">
+                EVERY TASK,</h1>
+            <h1 class="font-extrabold montserrat text-white text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide">
+                EVERY ASK,</h1>
+            <h2
+                class="font-extrabold montserrat text-black text-3xl sm:text-5xl md:text-5xl lg:text-5xl tracking-wider">
+                UNVEILS THE MASK</h2>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-red-600 w-full min-h-screen text-white p-8 md:p-16 lg:py-24">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-2 grid-rows-3 lg:grid-rows-2 gap-6">
+                    <div class="col-span-2 row-span-2 lg:col-span-1 lg:row-span-2 bg-[url('images/meabout.png')] bg-fixed rounded-3xl bg-no-repeat 
+                    bg-[30%_50%] [background-size:120%_auto] 
+                    md:bg-[50%_50%] md:[background-size:90%_auto] 
+                    lg:bg-[-15%_0%] lg:[background-size:50%_auto] 
+                    xl:bg-[-5%_0%] xl:[background-size:39%_auto] 
+                    2xl:bg-[6%_50%] 2xl:[background-size:30%_auto]">
+                        <img src="images/meabout.png" alt="About Me" 
+                        class="w-full md:h-[50vh] h-[50vh] opacity-0">  
+                    </div>
+                    <div class="bg-[#de932c] bg-[url('images/jersey.png')] bg-fixed rounded-3xl bg-no-repeat
+                    [background-position:0%_50%] [background-size:55%_auto]
+                    sm:[background-position:0%_50%] sm:[background-size:53%_auto]
+                    md:[background-position:0%_50%] md:[background-size:57%_auto]
+                    lg:[background-position:31%_0%] lg:[background-size:35%_auto]
+                    xl:[background-position:32.5%_-18%] xl:[background-size:30%_auto]
+                    2xl:[background-position:36%_-20%] 2xl:[background-size:25%_auto]">
+                        <img src="images/jersey.png" alt="Jersey Design" class="w-full md:h-[40vh] h-[30vh] opacity-0">
+                    </div>
+                    <div class="bg-[#fff] bg-[url('images/makinglogo.png')] bg-fixed rounded-3xl bg-no-repeat
+                    [background-position:230%_50%] [background-size:88%_auto]
+                    sm:[background-position:250%_50%] sm:[background-size:88%_auto]
+                    md:[background-position:270%_50%] md:[background-size:90%_auto]
+                    lg:[background-position:9%_200%] lg:[background-size:70%_auto]
+                    xl:[background-position:20%_300%] xl:[background-size:60%_auto]
+                    2xl:[background-position:32%_200%] 2xl:[background-size:41%_auto]">
+                        <img src="images/makinglogo.png" alt="Logo Making" class="w-full md:h-[40vh] h-[30vh] opacity-0">
+                    </div>
+                </div>
+                <div class="space-y-6 text-2xl text-justify">
+                    <h2 class="text-4xl lg:text-6xl font-bold montserrat">ABOUT ME</h2>
+                    <p>Nice that you have found me. I am a student of Information Technology, focusing on web and mobile
+                        development with knowledge in PHP, JavaScript, Java, C++, and Android development.</p>
+
+                    <p>I began as the editor of our school’s ICT Club and later joined our family sublimation business
+                        as a layout artist, designing logos, jerseys, and t-shirts. These roles helped me connect
+                        creativity with technology.</p>
+                    <p>I also have experience in video editing and skills in Photoshop, CorelDRAW, and Illustrator,
+                        which I use for logo and apparel design. Alongside my studies, I work on freelance projects to
+                        sharpen my craft and gain real-world experience.</p>
+                    <p>When I’m not coding or designing, I explore new tools, build personal projects, and spend time
+                        with family and friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Expertise Section -->
+    <section id="expertise" class="bg-white py-16">
+        <div class="bg-white py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-black text-4xl md:text-6xl font-black montserrat tracking-wider">MY EXPERTISE</h2>
+                <div class="mt-12">
+                    <div class="flex space-x-8 pb-4 no-scrollbar carousel overflow-x-auto md:overflow-hidden">
+                        <img src="logos/android.png" alt="Android"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/androidstudio.png" alt="Android Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/c++.png" alt="C++"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/eclipse.png" alt="Eclipse"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/java.png" alt="Java"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/javascript.png" alt="JavaScript"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/mysql.png" alt="MySQL"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/php.png" alt="PHP"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/vs.png" alt="Visual Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/android.png" alt="Android"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/androidstudio.png" alt="Android Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/c++.png" alt="C++"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/eclipse.png" alt="Eclipse"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/java.png" alt="Java"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/javascript.png" alt="JavaScript"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/mysql.png" alt="MySQL"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/php.png" alt="PHP"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="logos/vs.png" alt="Visual Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Works Section -->
+    <section id="works" class="bg-zinc-900 py-96">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="font-anton text-5xl md:text-7xl tracking-wide">SEE MY <span class="text-red-600">WORKS</span>
+            </h2>
+            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">I've built projects ranging from simple websites to
+                complex web apps. Here are some favorites.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
+                <!-- Project Card 1 -->
+                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
+                    <img src="images/projects/project1.png" alt="JLJ Delivery Services"
+                        class="w-full aspect-video rounded-lg object-cover" />
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">JLJ Delivery Services</h3>
+                        <p class="text-gray-600 mt-2">With the release of the OpenAI GPT Store, I decided to build a
+                            SaaS which allows users to collect email addresses from their GPT users.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Next.js</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">TypeScript</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">PostgreSQL</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">TailwindCSS</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Website</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 (Example) -->
+                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
+                    <img src="images/projects/project2.png" alt="Another Cool Project"
+                        class="w-full aspect-video rounded-lg object-cover" />
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">Another Cool Project</h3>
+                        <p class="text-gray-600 mt-2">This is a description for another one of my favorite projects,
+                            showcasing different skills and technologies.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">React</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Firebase</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Node.js</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">View
+                            on GitHub</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
+                    <img src="images/projects/project3.png" alt="Project Three"
+                        class="w-full aspect-video rounded-lg object-cover" />
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">Project Three</h3>
+                        <p class="text-gray-600 mt-2">This project demonstrates advanced UI/UX design and modern web
+                            technologies, focusing on user engagement and performance.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Vue.js</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Express</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">MongoDB</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Live
+                            Demo</a>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
+                    <img src="images/projects/project4.png" alt="Project Four"
+                        class="w-full aspect-video rounded-lg object-cover" />
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">Project Four</h3>
+                        <p class="text-gray-600 mt-2">An innovative application built with cutting-edge tools,
+                            emphasizing scalability and real-time features.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Angular</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Django</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">PostgreSQL</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">GitHub
+                            Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact and FAQ Section -->
+    <section id="contact" class="bg-red-600 py-16 md:py-24 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- FAQ Column -->
+                <div class="bg-zinc-900 p-8 rounded-2xl">
+                    <h2 class="text-3xl font-bold mb-6">Popular Questions</h2>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="border-b border-gray-700 pb-4">What technologies do you use for web development?</li>
+                        <li class="border-b border-gray-700 pb-4">Can you build responsive and mobile-friendly websites?
+                        </li>
+                        <li class="border-b border-gray-700 pb-4">Do you work with both front-end and back-end
+                            development?</li>
+                        <li class="border-b border-gray-700 pb-4">What kind of projects have you completed as a student?
+                        </li>
+                        <li class="border-b border-gray-700 pb-4">Can you integrate a database into a website?</li>
+                        <li class="pb-4">How can I contact you for collaboration or projects?</li>
+                    </ul>
+                </div>
+                <!-- Contact Form Column -->
+                <div class="bg-white text-black p-8 rounded-2xl">
+                    <h2 class="text-3xl font-bold">Contact Us</h2>
+                    <p class="text-gray-600 mb-6">Do you have some concern? Just write me a message</p>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div><input type="text" placeholder="Enter your name"
+                                class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        <div><input type="email" placeholder="Enter your email address"
+                                class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        <div><input type="tel" placeholder="Enter your phone (Optional)"
+                                class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        <div><textarea placeholder="Type your message..." rows="5"
+                                class="w-full p-4 bg-gray-100 rounded-lg border-none focus:ring-2 focus:ring-red-500"></textarea>
+                        </div>
+                        <div><button type="submit"
+                                class="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-zinc-800 transition-colors">SUBMIT
+                                MESSAGE</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 py-10 px-4 text-center md:text-left">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-400">
+            <div>
+                <h3 class="font-bold text-white mb-2">FB PAGE</h3>
+                <p>www.facebook.com/LandroCapul</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-white mb-2">PHONE (LANDLINE)</h3>
+                <p>+0927 3425 835</p>
+                <p>+0923 3435 374</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-white mb-2">MY LOCATION</h3>
+                <p>Ecoland Drive, Davao City, Philippines</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

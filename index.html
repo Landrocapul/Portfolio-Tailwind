@@ -20,66 +20,138 @@
 <body class="text-white">
 
     <header
-        class="fixed top-0 left-0 right-0 z-10 bg-transparent w-full flex justify-between items-center py-6 container mx-auto px-4">
-        <img src="images/LandroLogo2.png" alt="Landro Capul Logo" class="h-12 w-auto">
-        <nav>
-            <ul class="flex space-x-8">
-                <li><a href="#" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#" class="hover:text-gray-400">About</a></li>
-                <li><a href="#" class="hover:text-gray-400">Projects</a></li>
-                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
-            </ul>
-        </nav>
+        class="fixed top-0 left-0 right-0 z-50 bg-transparent w-full flex justify-between items-center py-6 container mx-auto px-4">
+        <img src="images/LandroLogo2.png" alt="Landro Capul Logo" class="h-8 md:h-12 w-auto">
+        <div class="flex items-center gap-4">
+            <button id="mobile-menu-button"
+                class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-red-500 rounded">
+                <span class="block w-6 h-0.5 bg-white mb-1"></span>
+                <span class="block w-6 h-0.5 bg-white mb-1"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#works" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <div class="bg-[#12181f] min-h-screen flex flex-col">
-        <div class="container mx-auto px-4">
-            <main class="flex-grow flex  vertical-ceter md:text-left">
-                <div class="z-10">
-                    <div class="text-6xl md:text-8xl font-bold montserrat">
-                        <h1>HI, I AM <span class="text-red-600"
-                                style="text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;">LANDRO</span>
-                        </h1>
-                    </div>
-                    <div class="mt-4">
-                        <p class="bg-red-600 inline-block text-white text-lg md:text-xl px-4 py-2">*WEB DEVELOPER |
-                            MOBILE DEVELOPERr</p>
-                    </div>
-                    <div class="mt-8">
-                        <a href="#"
-                            class="border border-white px-8 py-3 text-white hover:bg-white hover:text-black transition-colors duration-300">VIEW
-                            DETAILS</a>
-                    </div>
-                </div>
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar"
+        class="fixed inset-y-0 right-0 w-64 bg-brand-dark text-white transform translate-x-full transition-transform duration-300 z-40 md:hidden">
+        <div class="p-6 flex flex-col space-y-6">
+            <button id="mobile-menu-close" class="self-end text-2xl leading-none">&times;</button>
+            <nav class="mt-4 space-y-4 text-lg">
+                <a href="#" class="block hover:text-gray-300">Home</a>
+                <a href="#about" class="block hover:text-gray-300">About</a>
+                <a href="#works" class="block hover:text-gray-300">Projects</a>
+                <a href="#contact" class="block hover:text-gray-300">Contact</a>
+            </nav>
         </div>
-        <img src="images/LandroCapul.png" alt="Landro Capul"
-            style="height: 100vh; width: auto; object-fit: contain; z-index: 1; position: absolute; right: 0; bottom: 0;">
-
+    </div>
+    <div id="mobile-sidebar-backdrop"
+        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-30 md:hidden">
     </div>
 
+    <!-- Hero Section -->
+    <section class="bg-[#12181f] min-h-screen relative overflow-hidden flex sm:justify-center sm:items-center">
+        <div class="stars"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="container text-center absolute z-20 mx-auto
+        pt-24
+        sm:pt-96 
+        md:pt-96    
+        lg:pl-20  lg:pt-96 lg:text-left
+        xl:pl-16  xl:pt-80
+        2xl:pl-0 2xl:pt-80">
+
+            <div class="text-6xl md:text-7xl 2xl:text-8xl font-bold montserrat z-20">
+                <h1 class="z-20">HI, I AM <span class="text-red-600 z-20 outline-landro">LANDRO</span>
+                </h1>
+            </div>
+            <div class="mt-4">
+                <p class="bg-red-600 inline-block text-white text-lg md:text-3xl 2xl:text-4xl px-4 py-2">WEB DEVELOPER |
+                    MOBILE DEVELOPER</p>
+            </div>
+            <div class="mt-8">
+                <a href="#"
+                    class="border border-white px-10 py-4 text-md md:text-xl text-white hover:bg-white hover:text-black transition-colors duration-300">VIEW
+                    DETAILS</a>
+            </div>
+
+        </div>
+        <div class="">
+            <!-- Mobile hero image -->
+            <img src="images/LandroCapul2.png" alt="Landro Capul"
+                class="md:hidden w-auto object-contain absolute right-0 bottom-0 z-10
+                sm:h-screen sm:pt-24 md:pt-0 pt-20">
+            <!-- Desktop/Tablet hero image -->
+            <img src="images/LandroCapul.png" alt="Landro Capul"
+                class="hidden md:block md:h-screen w-auto object-contain absolute right-0 bottom-0 z-10
+                lg:pr-0 2xl:pr-20">
+        </div>
+
+    </section>
+
     <!-- Slogan Section -->
-    <section class="bg-red-600 w-full p-12 md:p-20">
-        <div class="container mx-auto">
-            <h1 class="font-anton text-white text-7xl md:text-9xl tracking-wide">EVERY TASK,</h1>
-            <h2 class="font-anton text-white text-7xl md:text-9xl tracking-wide mt-2">EVERY ASK,</h2>
-            <p class="font-anton text-black text-4xl md:text-5xl tracking-wider mt-8">UNVEILS THE MASK</p>
+    <section class="bg-red-600 w-full min-h-screen md:px-24 py-16 md:p-10 flex items-center justify-center">
+        <div class="container mx-auto my-16 md:my-72 flex flex-col gap-32 md:gap-36 md:text-left text-center">
+            <h1 class="slogan-line font-extrabold montserrat text-white text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide">
+                EVERY TASK,</h1>
+            <h1 class="slogan-line font-extrabold montserrat text-white text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide">
+                EVERY ASK,</h1>
+            <h2
+                class="slogan-line font-extrabold montserrat text-black text-3xl sm:text-5xl md:text-5xl lg:text-5xl tracking-wider">
+                UNVEILS THE MASK</h2>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="bg-red-600 w-full text-white p-8 md:p-16 lg:py-24">
+    <section id="about" class="bg-red-600 w-full min-h-screen text-white p-8 pb-96">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 gap-12 items-center">
-                <div class="grid grid-cols-2 gap-6 h-[450px] md:h-[500px]">
-                    <div class="bg-zinc-900 rounded-3xl row-span-2"></div>
-                    <div class="bg-zinc-900 rounded-3xl"></div>
-                    <div class="bg-zinc-900 rounded-3xl"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-2 grid-rows-3 lg:grid-rows-2 gap-6">
+                    <div class="col-span-2 row-span-2 lg:col-span-1 lg:row-span-2 bg-[url('images/meabout.png')] bg-fixed rounded-3xl bg-no-repeat 
+                    bg-[30%_50%] [background-size:120%_auto] 
+                    md:bg-[50%_50%] md:[background-size:90%_auto] 
+                    lg:bg-[-15%_0%] lg:[background-size:50%_auto] 
+                    xl:bg-[-5%_0%] xl:[background-size:39%_auto] 
+                    2xl:bg-[6%_50%] 2xl:[background-size:30%_auto]">
+                        <img src="images/meabout.png" alt="About Me" 
+                        class="w-full md:h-[50vh] h-[50vh] opacity-0">  
+                    </div>
+                    <div class="bg-[#de932c] bg-[url('images/jersey.png')] bg-fixed rounded-3xl bg-no-repeat
+                    [background-position:0%_50%] [background-size:55%_auto]
+                    sm:[background-position:0%_50%] sm:[background-size:53%_auto]
+                    md:[background-position:0%_50%] md:[background-size:57%_auto]
+                    lg:[background-position:31%_0%] lg:[background-size:35%_auto]
+                    xl:[background-position:32.5%_-18%] xl:[background-size:30%_auto]
+                    2xl:[background-position:36%_-20%] 2xl:[background-size:25%_auto]">
+                        <img src="images/jersey.png" alt="Jersey Design" class="w-full md:h-[40vh] h-[30vh] opacity-0">
+                    </div>
+                    <div class="bg-[#fff] bg-[url('images/makinglogo.png')] bg-fixed rounded-3xl bg-no-repeat
+                    [background-position:230%_50%] [background-size:88%_auto]
+                    sm:[background-position:250%_50%] sm:[background-size:88%_auto]
+                    md:[background-position:270%_50%] md:[background-size:90%_auto]
+                    lg:[background-position:9%_200%] lg:[background-size:70%_auto]
+                    xl:[background-position:20%_300%] xl:[background-size:60%_auto]
+                    2xl:[background-position:32%_200%] 2xl:[background-size:41%_auto]">
+                        <img src="images/makinglogo.png" alt="Logo Making" class="w-full md:h-[40vh] h-[30vh] opacity-0">
+                    </div>
                 </div>
-                <div class="space-y-6 text-base">
-                    <h2 class="text-4xl lg:text-5xl font-bold montserrat mb-8">ABOUT ME</h2>
+                <div class="space-y-6 text-2xl text-justify">
+                    <h2 class="text-4xl lg:text-6xl font-bold montserrat">ABOUT ME</h2>
                     <p>Nice that you have found me. I am a student of Information Technology, focusing on web and mobile
                         development with knowledge in PHP, JavaScript, Java, C++, and Android development.</p>
+
                     <p>I began as the editor of our school’s ICT Club and later joined our family sublimation business
                         as a layout artist, designing logos, jerseys, and t-shirts. These roles helped me connect
                         creativity with technology.</p>
@@ -94,22 +166,48 @@
     </section>
 
     <!-- My Expertise Section -->
-    <section id="expertise" class="bg-red-600 py-16 md:py-24">
+    <section id="expertise" class="bg-white py-16">
         <div class="bg-white py-12">
             <div class="container mx-auto text-center">
                 <h2 class="text-black text-4xl md:text-6xl font-black montserrat tracking-wider">MY EXPERTISE</h2>
                 <div class="mt-12">
-                    <div class="flex overflow-x-auto space-x-8 pb-4 no-scrollbar">
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
-                        <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-black"></div>
+                    <div class="flex space-x-8 pb-4 no-scrollbar carousel overflow-x-auto md:overflow-hidden">
+                        <img src="images/logos/android.png" alt="Android"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/androidstudio.png" alt="Android Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/c++.png" alt="C++"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/eclipse.png" alt="Eclipse"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/java.png" alt="Java"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/javascript.png" alt="JavaScript"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/mysql.png" alt="MySQL"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/php.png" alt="PHP"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/vs.png" alt="Visual Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32" />
+                        <img src="images/logos/android.png" alt="Android"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/androidstudio.png" alt="Android Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/c++.png" alt="C++"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/eclipse.png" alt="Eclipse"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/java.png" alt="Java"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/javascript.png" alt="JavaScript"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/mysql.png" alt="MySQL"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/php.png" alt="PHP"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
+                        <img src="images/logos/vs.png" alt="Visual Studio"
+                            class="flex-shrink-0 w-20 h-20 sm:w-24 md:w-32 sm:h-24 md:h-32 duplicate" />
                     </div>
                 </div>
             </div>
@@ -117,16 +215,17 @@
     </section>
 
     <!-- My Works Section -->
-    <section id="works" class="bg-zinc-900 py-24">
+    <section id="works" class="bg-brand-red py-96">
         <div class="container mx-auto text-center px-4">
-            <h2 class="font-anton text-5xl md:text-7xl tracking-wide">SEE MY <span class="text-red-600">WORKS</span>
+            <h2 class="slogan-line font-anton text-5xl md:text-7xl tracking-wide">SEE MY <span class="md:text-brand-red text-white">WORKS</span>
             </h2>
-            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">I've built projects ranging from simple websites to
+            <p class="slogan-line mt-4 text-lg text-gray-300 max-w-2xl mx-auto">I've built projects ranging from simple websites to
                 complex web apps. Here are some favorites.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
                 <!-- Project Card 1 -->
-                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
-                    <div class="w-full bg-black aspect-video rounded-lg"></div>
+                <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="images/projects/project1.png" alt="JLJ Delivery Services"
+                        class="w-full aspect-video rounded-lg object-cover" />
                     <div class="mt-6 flex-grow">
                         <h3 class="text-2xl font-bold">JLJ Delivery Services</h3>
                         <p class="text-gray-600 mt-2">With the release of the OpenAI GPT Store, I decided to build a
@@ -144,8 +243,9 @@
                     </div>
                 </div>
                 <!-- Project Card 2 (Example) -->
-                <div class="bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col">
-                    <div class="w-full bg-black aspect-video rounded-lg"></div>
+                <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="images/projects/project2.png" alt="Another Cool Project"
+                        class="w-full aspect-video rounded-lg object-cover" />
                     <div class="mt-6 flex-grow">
                         <h3 class="text-2xl font-bold">Another Cool Project</h3>
                         <p class="text-gray-600 mt-2">This is a description for another one of my favorite projects,
@@ -162,12 +262,52 @@
                             on GitHub</a>
                     </div>
                 </div>
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="images/projects/project3.png" alt="Project Three"
+                        class="w-full aspect-video rounded-lg object-cover" />
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">Project Three</h3>
+                        <p class="text-gray-600 mt-2">This project demonstrates advanced UI/UX design and modern web
+                            technologies, focusing on user engagement and performance.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Vue.js</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Express</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">MongoDB</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Live
+                            Demo</a>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <img src="images/projects/project4.png" alt="Project Four"
+                        class="w-full aspect-video rounded-lg object-cover" />
+                    <div class="mt-6 flex-grow">
+                        <h3 class="text-2xl font-bold">Project Four</h3>
+                        <p class="text-gray-600 mt-2">An innovative application built with cutting-edge tools,
+                            emphasizing scalability and real-time features.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Angular</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">Django</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md">PostgreSQL</span>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#"
+                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">GitHub
+                            Repo</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact and FAQ Section -->
-    <section id="contact" class="bg-red-600 py-16 md:py-24 px-4">
+    <section id="contact" class="bg-brand-red py-16 md:py-24 px-4">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <!-- FAQ Column -->
@@ -212,7 +352,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-zinc-900 py-10 px-4 text-center md:text-left">
+    <footer class="bg-brand-dark py-10 px-4 text-center md:text-left">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-400">
             <div>
                 <h3 class="font-bold text-white mb-2">FB PAGE</h3>
@@ -229,6 +369,111 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Reveal slogan lines when they enter the viewport
+        document.addEventListener('DOMContentLoaded', function () {
+            const hasIntersectionObserver = 'IntersectionObserver' in window;
+
+            // Slogan lines animation
+            const lines = document.querySelectorAll('.slogan-line');
+            if (hasIntersectionObserver && lines.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        const el = entry.target;
+                        if (entry.isIntersecting) {
+                            el.classList.remove('out');
+                            el.classList.add('visible');
+                        } else {
+                            // Only trigger exit animation after it has been visible once
+                            if (el.classList.contains('visible')) {
+                                el.classList.remove('visible');
+                                el.classList.add('out');
+                            }
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                lines.forEach(line => observer.observe(line));
+            }
+
+            // Project cards animation
+            const projectCards = document.querySelectorAll('.project-card');
+            if (hasIntersectionObserver && projectCards.length > 0) {
+                const projectsObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        const card = entry.target;
+                        if (entry.isIntersecting) {
+                            card.classList.remove('project-out');
+                            card.classList.add('project-visible');
+                        } else {
+                            if (card.classList.contains('project-visible')) {
+                                card.classList.remove('project-visible');
+                                card.classList.add('project-out');
+                            }
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                projectCards.forEach(card => projectsObserver.observe(card));
+            }
+
+            // Works section background color animation
+            const worksSection = document.getElementById('works');
+            if (hasIntersectionObserver && worksSection) {
+                const worksObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            worksSection.classList.remove('works-bg-hidden');
+                            worksSection.classList.add('works-bg-visible');
+                        } else {
+                            worksSection.classList.remove('works-bg-visible');
+                            worksSection.classList.add('works-bg-hidden');
+                        }
+                    });
+                }, { threshold: 0.3 });
+
+                worksObserver.observe(worksSection);
+            }
+
+            // Mobile navigation (hamburger + sidebar)
+            const menuButton = document.getElementById('mobile-menu-button');
+            const sidebar = document.getElementById('mobile-sidebar');
+            const closeButton = document.getElementById('mobile-menu-close');
+            const backdrop = document.getElementById('mobile-sidebar-backdrop');
+
+            function openSidebar() {
+                if (!sidebar || !backdrop) return;
+                sidebar.classList.remove('translate-x-full');
+                sidebar.classList.add('translate-x-0');
+                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+                backdrop.classList.add('opacity-100', 'pointer-events-auto');
+            }
+
+            function closeSidebar() {
+                if (!sidebar || !backdrop) return;
+                sidebar.classList.remove('translate-x-0');
+                sidebar.classList.add('translate-x-full');
+                backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+                backdrop.classList.add('opacity-0', 'pointer-events-none');
+            }
+
+            if (menuButton) {
+                menuButton.addEventListener('click', openSidebar);
+            }
+            if (closeButton) {
+                closeButton.addEventListener('click', closeSidebar);
+            }
+            if (backdrop) {
+                backdrop.addEventListener('click', closeSidebar);
+            }
+            if (sidebar) {
+                sidebar.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', closeSidebar);
+                });
+            }
+        });
+    </script>
 
 </body>
 
