@@ -19,13 +19,13 @@ body {
         background-color: #cb2121;
     }
     to {
-        background-color: #252525;
+        background-color: #111827;
     }
 }
 
 @keyframes worksBgToRed {
     from {
-        background-color: #252525;
+        background-color: #111827;
     }
     to {
         background-color: #cb2121;
@@ -192,12 +192,11 @@ html {
 }
 
 .outline-landro {
-    color: #cb2121;              /* inner text color (Tailwind's red-600) */
+    color: #cb2121;              /* inner text color (brand red) */
     -webkit-text-stroke: 4px #fff; /* thickness + outline color */
     paint-order: stroke fill;    /* ensure stroke is drawn under fill */
     animation: landroColorShift 4s ease-in-out infinite;
 }
-
 
 @keyframes landroColorShift {
     0% {
