@@ -93,10 +93,12 @@
                 <p class="bg-red-600 inline-block text-white text-lg md:text-3xl 2xl:text-4xl px-4 py-2">WEB DEVELOPER |
                     MOBILE DEVELOPER</p>
             </div>
-            <div class="mt-8">
-                <a href="#"
-                    class="border border-white px-10 py-4 text-md md:text-xl text-white hover:bg-white hover:text-black transition-colors duration-300">VIEW
-                    DETAILS</a>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href="#contact" id="hireMeButton"
+                    class="border border-white px-10 py-4 text-md md:text-xl text-white hover:bg-white hover:text-black transition-colors duration-300">HIRE
+                    ME</a>
+                <a href="cv.html"
+                    class="bg-white text-black px-10 py-4 text-md md:text-xl hover:bg-gray-200 hover:text-black transition-colors duration-300">          CURRICULUM VITAE</a>
             </div>
 
         </div>
@@ -332,89 +334,104 @@
                 </div>
             </div>
             
-            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
-                <!-- Project Card 1 -->
-                <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl" 
-                     data-tech="nextjs,typescript,postgresql,tailwindcss" data-category="saas" data-date="2024-01" data-complexity="advanced" data-name="JLJ Delivery Services">
-                    <img src="images/projects/project1.png" alt="JLJ Delivery Services"
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+                <!-- Project Card 1 - TeamPulse -->
+                <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                     data-tech="java,android-studio,firebase,android-native" data-category="mobile" data-date="2024-01" data-complexity="advanced" data-name="TeamPulse">
+                    <img src="images/projects/project1.png" alt="TeamPulse"
                         class="w-full aspect-video rounded-lg object-cover" />
                     <div class="mt-6 flex-grow">
-                        <h3 class="text-2xl font-bold">JLJ Delivery Services</h3>
-                        <p class="text-gray-600 mt-2">With the release of the OpenAI GPT Store, I decided to build a
-                            SaaS which allows users to collect email addresses from their GPT users.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Next.js</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">TypeScript</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">PostgreSQL</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">TailwindCSS</span>
-                    </div>
-                    <div class="mt-6">
-                        <a href="#"
-                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Website</a>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold mb-2">TeamPulse</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Android App</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">TeamPulse is the ultimate educational project management app designed for students, team leaders, and teachers. Streamline collaboration, track progress, and achieve academic excellence.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Android Native</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Java</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Android Studio</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Firebase</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://landrocapul.github.io/Teampulse-web/" target="_blank" rel="noopener noreferrer"
+                                class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">
+                                View Project
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Project Card 2 (Example) -->
+                <!-- Project Card 2: Inventory Management System -->
                 <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                     data-tech="react,firebase,nodejs,javascript" data-category="web" data-date="2023-11" data-complexity="intermediate" data-name="Another Cool Project">
-                    <img src="images/projects/project2.png" alt="Another Cool Project"
+                     data-tech="php,mysql,javascript,html,tailwindcss" data-category="web" data-date="2023-11" data-complexity="intermediate" data-name="Inventory Management System">
+                    <img src="images/projects/project2.png" alt="Inventory Management System"
                         class="w-full aspect-video rounded-lg object-cover" />
                     <div class="mt-6 flex-grow">
-                        <h3 class="text-2xl font-bold">Another Cool Project</h3>
-                        <p class="text-gray-600 mt-2">This is a description for another one of my favorite projects,
-                            showcasing different skills and technologies.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">React</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Firebase</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Node.js</span>
-                    </div>
-                    <div class="mt-6">
-                        <a href="#"
-                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">View
-                            on GitHub</a>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold mb-2">Inventory Management System</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Web App</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A comprehensive solution for managing inventory, sales, and purchases with real-time stock tracking and reporting.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">MySQL</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML</span>
+                            <span class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded">Tailwind CSS</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://inventory-eshopping.infinityfree.me/" target="_blank" rel="noopener noreferrer" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Website</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
+                <!-- Project Card 3 - SafeZonePH -->
                 <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                     data-tech="vue,express,mongodb,javascript" data-category="web" data-date="2023-09" data-complexity="intermediate" data-name="Project Three">
-                    <img src="images/projects/project3.png" alt="Project Three"
+                     data-tech="java,xml,android,google-maps" data-category="mobile" data-date="2023-09" data-complexity="advanced" data-name="SafeZonePH">
+                    <img src="images/projects/project3.png" alt="SafeZonePH"
                         class="w-full aspect-video rounded-lg object-cover" />
                     <div class="mt-6 flex-grow">
-                        <h3 class="text-2xl font-bold">Project Three</h3>
-                        <p class="text-gray-600 mt-2">This project demonstrates advanced UI/UX design and modern web
-                            technologies, focusing on user engagement and performance.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Vue.js</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Express</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">MongoDB</span>
-                    </div>
-                    <div class="mt-6">
-                        <a href="#"
-                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">Live
-                            Demo</a>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold mb-2">SafeZonePH</h3>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Android App</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A disaster preparedness and response Android application designed for the Philippines, providing essential information and resources for natural disasters including earthquakes, fires, floods, and typhoons.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Java</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Android</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">XML</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Google Maps</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://landrocapul.github.io/SafezonePh/" target="_blank" rel="noopener noreferrer"
+                                class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">
+                                View Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Project Card 4 -->
+                <!-- Project Card 4 - JLJ Delivery Express -->
                 <div class="project-card bg-white text-black rounded-2xl shadow-lg p-6 text-left flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                     data-tech="angular,django,postgresql,python" data-category="web" data-date="2023-07" data-complexity="advanced" data-name="Project Four">
-                    <img src="images/projects/project4.png" alt="Project Four"
+                     data-tech="figma,prototype,ui-ux,delivery" data-category="design" data-date="2024-01" data-complexity="intermediate" data-name="JLJ Delivery Express">
+                    <img src="images/projects/project4.png" alt="JLJ Delivery Express"
                         class="w-full aspect-video rounded-lg object-cover" />
                     <div class="mt-6 flex-grow">
-                        <h3 class="text-2xl font-bold">Project Four</h3>
-                        <p class="text-gray-600 mt-2">An innovative application built with cutting-edge tools,
-                            emphasizing scalability and real-time features.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Angular</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">Django</span>
-                        <span class="bg-gray-200 text-gray-800 text-sm px-3 py-1 rounded-md tech-tag">PostgreSQL</span>
-                    </div>
-                    <div class="mt-6">
-                        <a href="#"
-                            class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">GitHub
-                            Repo</a>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold mb-2">JLJ Delivery Express</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">UI/UX Design</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fast, reliable, and hassle-free delivery your packages arrive safely and on time, every time. Ship with confidence and track your parcels in real-time!</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Figma</span>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">Prototype</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">UI/UX</span>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://www.figma.com/proto/7v37ecAJUOiiCG7EfxoTpV/JLJ-EXPRESS?node-id=132-284&p=f&t=z84ES3oLHFXfIcDw-0&scaling=min-zoom&content-scaling=fixed&page-id=2%3A2&starting-point-node-id=132%3A284" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-zinc-800 transition-colors">
+                                View Prototype
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -464,10 +481,10 @@
                                 <img src="images/logos/javascript.png" alt="JavaScript" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">JavaScript</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Advanced</span>
+                            <span class="text-sm text-gray-500">Low</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-yellow-500 h-3 rounded-full skill-progress" data-progress="85"></div>
+                            <div class="bg-yellow-500 h-3 rounded-full skill-progress" data-progress="30"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">ES6+, DOM Manipulation, Async Programming</p>
                     </div>
@@ -477,10 +494,10 @@
                                 <img src="images/logos/tailwind.png" alt="TailwindCSS" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">TailwindCSS</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Advanced</span>
+                            <span class="text-sm text-gray-500">Medium</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-cyan-500 h-3 rounded-full skill-progress" data-progress="88"></div>
+                            <div class="bg-cyan-500 h-3 rounded-full skill-progress" data-progress="60"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Utility-first CSS, Custom Components</p>
                     </div>
@@ -500,10 +517,10 @@
                                 <img src="images/logos/php.png" alt="PHP" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">PHP</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Intermediate</span>
+                            <span class="text-sm text-gray-500">Medium</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-purple-500 h-3 rounded-full skill-progress" data-progress="75"></div>
+                            <div class="bg-purple-500 h-3 rounded-full skill-progress" data-progress="60"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Laravel, REST APIs, Database Integration</p>
                     </div>
@@ -526,10 +543,10 @@
                                 <img src="images/logos/java.png" alt="Java" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">Java</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Intermediate</span>
+                            <span class="text-sm text-gray-500">Advanced</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-red-500 h-3 rounded-full skill-progress" data-progress="70"></div>
+                            <div class="bg-red-500 h-3 rounded-full skill-progress" data-progress="80"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Spring Boot, Object-Oriented Programming</p>
                     </div>
@@ -562,10 +579,10 @@
                                 <img src="images/logos/c++.png" alt="C++" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">C++</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Intermediate</span>
+                            <span class="text-sm text-gray-500">Medium</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-blue-600 h-3 rounded-full skill-progress" data-progress="68"></div>
+                            <div class="bg-blue-600 h-3 rounded-full skill-progress" data-progress="60"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Data Structures, Algorithms, Performance</p>
                     </div>
@@ -585,10 +602,10 @@
                                 <img src="images/logos/github.png" alt="Git/GitHub" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">Git/GitHub</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Advanced</span>
+                            <span class="text-sm text-gray-500">Medium</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-gray-800 h-3 rounded-full skill-progress" data-progress="85"></div>
+                            <div class="bg-gray-800 h-3 rounded-full skill-progress" data-progress="60"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Version Control, Collaboration, CI/CD</p>
                     </div>
@@ -621,13 +638,13 @@
                     <div class="skill-card slogan-line bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center">
-                                <img src="images/logos/illustrator.png" alt="Illustrator" class="w-8 h-8 mr-3" />
-                                <h4 class="font-semibold text-gray-500 text-lg">Illustrator</h4>
+                                <img src="images/logos/illustrator.png" alt="Adobe Illustrator" class="w-8 h-8 mr-3" />
+                                <h4 class="font-semibold text-gray-500 text-lg">Adobe Illustrator</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Intermediate</span>
+                            <span class="text-sm text-gray-500">Medium</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-orange-600 h-3 rounded-full skill-progress" data-progress="70"></div>
+                            <div class="bg-orange-500 h-3 rounded-full skill-progress" data-progress="55"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Vector Illustration, Icon Design</p>
                     </div>
@@ -650,10 +667,10 @@
                                 <img src="images/logos/eclipse.png" alt="Eclipse" class="w-8 h-8 mr-3" />
                                 <h4 class="font-semibold text-gray-500 text-lg">Eclipse</h4>
                             </div>
-                            <span class="text-sm text-gray-500">Intermediate</span>
+                            <span class="text-sm text-gray-500">Low</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
-                            <div class="bg-indigo-600 h-3 rounded-full skill-progress" data-progress="65"></div>
+                            <div class="bg-purple-700 h-3 rounded-full skill-progress" data-progress="40"></div>
                         </div>
                         <p class="text-sm text-gray-600 mt-3">Java Development, Debugging</p>
                     </div>
@@ -868,7 +885,337 @@
         </div>
     </footer>
 
+    <!-- Project Inquiry Modal -->
+    <div id="projectInquiryModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-2xl w-full max-w-2xl mx-4 max-h-[90vh] overflow-y-auto shadow-2xl">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Project Inquiry</h3>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Progress Steps -->
+                <div class="flex justify-between mb-8">
+                    <div class="step flex-1 text-center relative">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-red-600 text-white flex items-center justify-center font-semibold mb-2">1</div>
+                        <span class="text-sm">Project Type</span>
+                        <div class="absolute top-4 left-1/2 w-full h-1 bg-gray-200 -z-10"></div>
+                    </div>
+                    <div class="step flex-1 text-center relative">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold mb-2">2</div>
+                        <span class="text-sm text-gray-500">Details</span>
+                        <div class="absolute top-4 left-1/2 w-full h-1 bg-gray-200 -z-10"></div>
+                    </div>
+                    <div class="step flex-1 text-center">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold mb-2">3</div>
+                        <span class="text-sm text-gray-500">Contact Info</span>
+                    </div>
+                </div>
+
+                <!-- Form Steps -->
+                <form id="projectInquiryForm" class="space-y-6">
+                    <!-- Step 1: Project Type -->
+                    <div class="step-content" id="step1">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">What type of project do you need help with? <span class="text-red-600">*</span></label>
+                                <select name="projectType" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option value="web">Website Development</option>
+                                    <option value="web-app">Web Application</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="ui-ux">UI/UX Design</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="other">Other (Please specify)</option>
+                                </select>
+                            </div>
+                            <div id="otherProjectType" class="hidden">
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">Please specify <span class="text-red-600">*</span></label>
+                                <input type="text" name="otherProjectType" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800">
+                            </div>
+                        </div>
+                        <div class="mt-8 flex justify-end">
+                            <button type="button" onclick="nextStep(1, 2)" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium text-lg">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Project Details -->
+                    <div class="step-content hidden" id="step2">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">What's your budget range? <span class="text-red-600">*</span></label>
+                                <select name="budget" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" required>
+                                    <option value="" disabled selected>Select budget range</option>
+                                    <option value="under-1k">Under $1,000</option>
+                                    <option value="1k-5k">$1,000 - $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-plus">$25,000+</option>
+                                    <option value="not-sure">Not sure yet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">What's your timeline? <span class="text-red-600">*</span></label>
+                                <select name="timeline" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" required>
+                                    <option value="" disabled selected>Select timeline</option>
+                                    <option value="urgent">ASAP (1-2 weeks)</option>
+                                    <option value="1-3months">1-3 months</option>
+                                    <option value="3-6months">3-6 months</option>
+                                    <option value="6plus">6+ months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">Project Description <span class="text-red-600">*</span></label>
+                                <textarea name="description" rows="4" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex justify-between">
+                            <button type="button" onclick="prevStep(2, 1)" class="text-gray-600 hover:text-red-600 font-medium px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">Back</button>
+                            <button type="button" onclick="nextStep(2, 3)" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium text-lg">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Contact Information -->
+                    <div class="step-content hidden" id="step3">
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">Your Name <span class="text-red-600">*</span></label>
+                                    <input type="text" name="name" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">Email Address <span class="text-red-600">*</span></label>
+                                    <input type="email" name="email" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">Phone Number</label>
+                                <input type="tel" name="phone" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800" placeholder="+1 (___) ___-____">
+                            </div>
+                            <div>
+                                <label class="block text-gray-900 font-semibold mb-2 text-sm uppercase tracking-wider">Company/Organization (Optional)</label>
+                                <input type="text" name="company" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white text-gray-800">
+                            </div>
+                            <div class="flex items-start">
+                                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" class="mt-1 mr-2" required>
+                                <label for="privacyPolicy" class="text-sm text-gray-800">I agree to the <a href="#" class="text-red-600 hover:underline font-medium">Privacy Policy</a> and consent to Landro Capul contacting me about my inquiry.</label>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex justify-between">
+                            <button type="button" onclick="prevStep(3, 2)" class="text-gray-600 hover:text-red-600 font-medium px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">Back</button>
+                            <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium text-lg">Submit Inquiry</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="hidden text-center py-8">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Thank You!</h3>
+                    <p class="text-gray-600 mb-6">Your project inquiry has been received. I'll get back to you within 24 hours.</p>
+                    <button onclick="closeModal()" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium text-lg">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // Project Inquiry Modal Functionality
+        const modal = document.getElementById('projectInquiryModal');
+        const closeButton = document.getElementById('closeModal');
+        const form = document.getElementById('projectInquiryForm');
+        const successMessage = document.getElementById('successMessage');
+
+        // Show modal when Hire Me button is clicked
+        document.getElementById('hireMeButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            // Reset form
+            form.reset();
+            // Reset to first step
+            document.querySelectorAll('.step-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById('step1').classList.remove('hidden');
+            // Reset steps
+            document.querySelectorAll('.step').forEach((step, index) => {
+                const number = step.querySelector('div:first-child');
+                const line = step.querySelector('div:last-child');
+                if (index === 0) {
+                    number.classList.remove('bg-gray-200', 'text-gray-600');
+                    number.classList.add('bg-red-600', 'text-white');
+                    step.querySelector('span').classList.remove('text-gray-500');
+                } else {
+                    number.classList.remove('bg-red-600', 'text-white');
+                    number.classList.add('bg-gray-200', 'text-gray-600');
+                    step.querySelector('span').classList.add('text-gray-500');
+                }
+            });
+            // Hide success message
+            successMessage.classList.add('hidden');
+            form.classList.remove('hidden');
+        }
+
+        // Close modal when clicking the close button
+        closeButton.addEventListener('click', closeModal);
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Toggle other project type field
+        document.querySelector('select[name="projectType"]').addEventListener('change', function() {
+            const otherField = document.getElementById('otherProjectType');
+            otherField.classList.toggle('hidden', this.value !== 'other');
+            if (this.value !== 'other') {
+                document.querySelector('input[name="otherProjectType"]').value = '';
+            }
+        });
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            // For now, we'll just show the success message
+            form.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+        });
+
+        // Navigation between steps
+        function nextStep(current, next) {
+            // Basic validation
+            let isValid = true;
+            const currentStep = document.getElementById(`step${current}`);
+            
+            if (current === 1) {
+                const projectType = document.querySelector('select[name="projectType"]');
+                if (!projectType.value) {
+                    isValid = false;
+                    projectType.classList.add('border-red-500');
+                } else {
+                    projectType.classList.remove('border-red-500');
+                }
+                
+                if (projectType.value === 'other') {
+                    const otherType = document.querySelector('input[name="otherProjectType"]');
+                    if (!otherType.value.trim()) {
+                        isValid = false;
+                        otherType.classList.add('border-red-500');
+                    } else {
+                        otherType.classList.remove('border-red-500');
+                    }
+                }
+            } else if (current === 2) {
+                const requiredFields = currentStep.querySelectorAll('[required]');
+                requiredFields.forEach(field => {
+                    if (!field.value) {
+                        isValid = false;
+                        field.classList.add('border-red-500');
+                    } else {
+                        field.classList.remove('border-red-500');
+                    }
+                });
+            }
+            
+            if (!isValid) {
+                return;
+            }
+            
+            // Update UI for next step
+            currentStep.classList.add('hidden');
+            document.getElementById(`step${next}`).classList.remove('hidden');
+            
+            // Update progress indicator
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((step, index) => {
+                const number = step.querySelector('div:first-child');
+                const line = step.querySelector('div:last-child');
+                
+                if (index < next) {
+                    number.classList.remove('bg-gray-200', 'text-gray-600');
+                    number.classList.add('bg-red-600', 'text-white');
+                    step.querySelector('span').classList.remove('text-gray-500');
+                    if (line) line.classList.add('bg-red-600');
+                } else {
+                    number.classList.remove('bg-red-600', 'text-white');
+                    number.classList.add('bg-gray-200', 'text-gray-600');
+                    step.querySelector('span').classList.add('text-gray-500');
+                    if (line) line.classList.remove('bg-red-600');
+                }
+                
+                if (index === next - 1) {
+                    number.classList.add('ring-2', 'ring-offset-2', 'ring-red-500');
+                } else {
+                    number.classList.remove('ring-2', 'ring-offset-2', 'ring-red-500');
+                }
+            });
+            
+            // Scroll to top of form
+            document.querySelector('.step-content:not(.hidden)').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        function prevStep(current, prev) {
+            document.getElementById(`step${current}`).classList.add('hidden');
+            document.getElementById(`step${prev}`).classList.remove('hidden');
+            
+            // Update progress indicator
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((step, index) => {
+                const number = step.querySelector('div:first-child');
+                const line = step.querySelector('div:last-child');
+                
+                if (index < prev) {
+                    number.classList.remove('bg-gray-200', 'text-gray-600');
+                    number.classList.add('bg-red-600', 'text-white');
+                    step.querySelector('span').classList.remove('text-gray-500');
+                    if (line) line.classList.add('bg-red-600');
+                } else {
+                    number.classList.remove('bg-red-600', 'text-white');
+                    number.classList.add('bg-gray-200', 'text-gray-600');
+                    step.querySelector('span').classList.add('text-gray-500');
+                    if (line) line.classList.remove('bg-red-600');
+                }
+                
+                if (index === prev - 1) {
+                    number.classList.add('ring-2', 'ring-offset-2', 'ring-red-500');
+                } else {
+                    number.classList.remove('ring-2', 'ring-offset-2', 'ring-red-500');
+                }
+            });
+            
+            // Scroll to top of form
+            document.querySelector('.step-content:not(.hidden)').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        // Make functions globally available
+        window.nextStep = nextStep;
+        window.prevStep = prevStep;
+        window.closeModal = closeModal;
+
         // Reveal slogan lines when they enter the viewport
         document.addEventListener('DOMContentLoaded', function () {
             const hasIntersectionObserver = 'IntersectionObserver' in window;
